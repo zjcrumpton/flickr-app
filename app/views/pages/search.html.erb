@@ -1,0 +1,7 @@
+<h1>User Search:</h1><br>
+
+<%= form_with(url: "/photos", method: "get", local: true) do %>
+  <%= label_tag(:user_id, "See Photos For") %>
+  <%= text_field_tag(:user_id) %>
+  <%= submit_tag("Search") %>
+<% end %>
